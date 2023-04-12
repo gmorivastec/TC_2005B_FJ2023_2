@@ -8,7 +8,7 @@ public class CartaLoader : MonoBehaviour
 {
     
     [SerializeField]
-    private CartaSO _datos;
+    public CartaSO _datos;
 
     [SerializeField]
     private TMP_Text _nombre;
@@ -24,14 +24,14 @@ public class CartaLoader : MonoBehaviour
     {   
 
         Assert.IsNotNull(_datos, "LOS DATOS DEL PREFAB CARTA NO PUEDEN SER NULOS");
+        CargarDatosDeCarta();
+    }
+
+    public void CargarDatosDeCarta() 
+    {
         _nombre.text = _datos._nombre;
         _fuerza.text = _datos._fuerza;
         _spriteRenderer.sprite = _datos._sprite;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
