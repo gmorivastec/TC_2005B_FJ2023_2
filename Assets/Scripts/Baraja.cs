@@ -21,6 +21,7 @@ public class Baraja : MonoBehaviour
         {
             _cartasEnEscena[i]._datos = _cartas[Random.Range(0, _cartas.Length)];
             _cartasEnEscena[i].CargarDatosDeCarta();
+            
         }
     }
 }
