@@ -21,19 +21,50 @@ public class TestMouse : MonoBehaviour
 
     	
 
-    // DIMOS CLICK Y DESPUES ARRASTRAMOS
-    void OnMouseDrag() {}	
+    
 
     // MOUSE ENTRÓ, NO IMPORTA EL CLICK
-    void OnMouseEnter() {}	
+    void OnMouseEnter() 
+    {
+        print("ON MOUSE ENTER");
+    }	
+
+    void OnMouseOver() 
+    {
+        //print("ON MOUSE OVER");
+    }	
 
     // MOUSE SALIÓ, NO IMPORTA EL CLICK
-    void OnMouseExit() {}	
+    void OnMouseExit() 
+    {
+        print("ON MOUSE EXIT");
+    }	
 
 
     // DIMOS CLICK SOBRE OBJETO
-    void OnMouseDown() {}
-    void OnMouseOver() {}	
-    void OnMouseUp() {}	
-    void OnMouseUpAsButton() {}
+    void OnMouseDown() 
+    {
+        print("ON MOUSE DOWN");
+    }
+
+    // DIMOS CLICK Y DESPUES ARRASTRAMOS
+    void OnMouseDrag() 
+    {
+        //print("ON MOUSE DRAG");        
+    }	
+
+    void OnMouseUp() 
+    {
+        print("ON MOUSE UP");
+    }
+    
+
+    void OnMouseUpAsButton() 
+    {
+        print("ON MOUSE UP AS BUTTON");
+    }
+
+    
+    	
+    
 }
